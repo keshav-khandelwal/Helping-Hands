@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            FORM
+        </title>
+        <style>
+            body{
+                background-image: url(b4.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: static;
+                
+            }
+            .h1{
+                background-color: #14798e;
+                color: antiquewhite;
+                text-align: center;
+            }
+            input[type=text],input[type=date],input[type=file],input[type=tel], select, textarea{
+            width: 80%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+}
+label {
+    color: aliceblue;
+    font-size: 25px;
+  padding: 12px 12px 12px 0px;
+  display: inline-block;
+}
+input[type=submit],input[type=reset] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+.container {
+    background-color: rgb(6, 5, 5);
+  background-color: rgba(0,0,0, 0.4);
+
+  border-radius: 5px;
+  
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.end{
+                background-color: #2b2727;
+                margin-top: 150px;
+                padding-bottom: 100px;
+                padding-top: 20px;
+                padding-left: 40px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 class="h1"> Fill this form to tell about your problem.</h1>
+        <div class="container">
+            <form action="action_page.php">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+              </div>
+            
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Gender:</label>
+                </div>
+                <div class="col-75">
+                  <input type="checkbox" id="gender" name="gender" value="Male">
+                  <label for="gender" style="padding-left: 20px;">Male</label><br>
+                  <input type="checkbox" id="gender" name="gender" value="Female">
+                  <label for="gender" style="padding: 20px;">Female</label>
+                </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="australia">India</option>
+                    <option value="australia">China</option>
+                    <option value="australia">Japan</option>
+                    <option value="australia">Russia</option>
+                    <option value="australia">Germany</option>
+                    <option value="australia">Italy</option>
+
+
+
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Problem-Description</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="img">Select-image:</label>
+                </div>
+                <div class="col-75">
+                  <input type="file" id="img" name="img" accept="image/*">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="video">Selece-Video:</label>
+                </div>
+                <div class="col-75">
+                  <input type="file" id="video" name="video" accept="video/*">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="tel">Phone-number:</label>
+                </div>
+                <div class="col-75">
+                  <input type="tel" id="tel" name="tel" placeholder="****-***-***" pattern="['0-9']{4}-['0-9']{3}-['0-9']{3}" required accept="tel/*">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Address</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="address" name="address" placeholder="Your address..">
+                </div>
+
+
+
+
+
+              <div class="row">
+                <input type="submit" value="Submit">
+                <input type="reset" style="margin-right: 1300px;" >
+              </div>
+            </form>
+          </div>
+      <div>
+        <div class="end">
+          <p style="color: white;">
+            <a href="Homepage.html" style="color: white;" target="_blank"> HELPING HANDS </a>
+          </p>
+          <p style="color: white;">
+            <a href="Aboutus.html" style="color: white;" target="_blank">  About </a>
+          </p>
+          <p style="color: white;" >
+            <a href="Ourteam.html" style="color: white;" target="_blank"> Helping Hands Team </a>
+          </p>
+          <p style="color: white;">
+          Charity
+          </p>
+          <p style="color: white;">
+            Be a Volunteer
+          </p><hr>
+          <p style="color: white;">
+            GET IN TOUCH
+          </p>
+          <p style="color: white;">
+            T (+91) 9509168342
+          </p>
+          <p style="color: white;">
+          Email: keshavkhandelwal.jwr@gmail.com
+          </p><hr>
+  
+  
+          <img src="facebook.png" width="55px" height="50px">
+          <img src="insta.png" width="50px" height="50px">
+          <img src="twitter.png" width="50px" height="50px">
+          <img src="youtube.png" width="50px" height="50px">
+  
+  
+  
+      </div>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            LOGIN
+        </title>
+        <style>
+            body{
+background-image:url(b6.jpg);
+background-position: center;
+background-size: cover;
+background-position: center;
+position: relative;
+padding-bottom: 120px;
+}
+.form-box{
+margin: 100px;
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 10px auto;
+  background-color: rgb(14, 8, 8);
+  background-color: rgba(10, 7, 7, 0.7);
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+.botton-box{
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #2474ff1f;
+  border-radius: 30px;
+}
+.button1{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#btn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #307bd6,#2867ae);
+  border-radius: 30px;
+  transition: .5s;
+}
+.stripe-box{
+  padding-left: 1170px;
+  padding-top: 8px;
+}
+.input-group{
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+.input-field{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-bottom: 1px solid #999;
+  border-left: 0;
+  border-right: 0;
+  outline: none;
+  background: transparent;
+}
+.submit-btn{
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #307bd6,#2867ae);
+  border: 0;
+  outline: none;
+  border-radius: 20px;
+}
+.chech-box{
+  margin: 30px 10px 30px 0;
+}
+span{
+  color: rgb(235, 238, 241);
+  font-size: 12px;
+  bottom: 68px;
+  position: absolute;
+}
+#login{
+  left: 50px;
+}
+#register{
+  left: 450px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="form-box" style="margin-top: 100px;" >
+            <div class="botton-box">
+               <div id="btn"></div>
+               
+               <button type="button" class="button1" onclick="login()" style="color: white;">log In</button>
+               <button type="button" class="button1" onclick="register()" style="color: white;">Register</button>
+               
+            </div>
+            <form id="login"class="input-group" action="action_page.js">
+             <label for="uname" style="color: white;"><b>User Id</b></label>
+             <input type="text" class="input-field" placeholder="user Id" required>
+             <label for="uname" style="color: white;"><b>Password</b></label>
+             <input type="password" class="input-field" placeholder="Enter Password" required>
+             <input type="checkbox" class="chech-box"><span>Remember Password</span>
+             <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="register"class="input-group">
+               <input type="text" class="input-field" placeholder="user Id" required>
+               <input type="email" class="input-field" placeholder="Email Id" required>
+               <input type="text" class="input-field" placeholder="Enter Password" required>
+               <input type="checkbox" class="chech-box"><span>I agree to the t&c</span>
+               <button type="submit" class="submit-btn">Register</button>
+              </form>
+            </div>
+         </div>
+   
+   
+   <script>
+   var x = document.getElementById("login");
+   var y = document.getElementById("register");
+   var z = document.getElementById("btn");
+   
+   function register(){
+   x.style.left = "-400px";
+   y.style.left = "50px";
+   z.style.left = "110px";
+   }
+   function login(){
+   x.style.left = "50px";
+   y.style.left = "450px";
+   z.style.left = "0px";   
+   }
+   </script>
+    
+    </body>
+</html>

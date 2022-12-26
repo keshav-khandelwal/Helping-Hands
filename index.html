@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HELPING HANDS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>       
+.stripe-box{
+  background-color: rgb(137, 122, 122);
+  text-align: center;
+  text-decoration-color: aliceblue;
+
+}
+.full-page
+{
+  height: 100%;
+	width: 100%;
+	background-image:url(b1.jpg);
+	background-position: center;
+	background-size: cover;
+  background-position: center;
+	position: relative;
+  padding-bottom: 120px;
+  
+
+}
+.navbar{
+  width: 85%;
+  
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar ul p{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  
+}
+.navbar ul p a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.navbar ul p a:hover{
+  opacity: 0.8;
+  color: rgb(7, 3, 3);
+}
+
+
+.form-box{
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 10px auto;
+  background-color: rgb(6, 5, 5);
+  background-color: rgba(0,0,0, 0.4);
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+.botton-box{
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #2474ff1f;
+  border-radius: 30px;
+}
+.button1{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#btn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #307bd6,#2867ae);
+  border-radius: 30px;
+  transition: .5s;
+}
+.stripe-box{
+  padding-left: 1170px;
+  padding-top: 8px;
+}
+.input-group{
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+.input-field{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-bottom: 1px solid #999;
+  border-left: 0;
+  border-right: 0;
+  outline: none;
+  background: transparent;
+}
+.submit-btn{
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #307bd6,#2867ae);
+  border: 0;
+  outline: none;
+  border-radius: 20px;
+}
+.chech-box{
+  margin: 30px 10px 30px 0;
+}
+span{
+  color: rgb(98, 172, 225);
+  font-size: 12px;
+  bottom: 68px;
+  position: absolute;
+}
+#login{
+  left: 50px;
+}
+#register{
+  left: 450px;
+}
+
+div.gallery {
+margin: 30px;
+margin-left: 30px;
+border: 1px solid #ccc;
+float: left;
+width: 300px;
+}
+
+div.gallery:hover {
+border: 1px solid #777;
+}
+
+div.gallery img {
+width: 100%;
+height: auto;
+}
+
+div.desc {
+background-color: rgb(242, 247, 243);
+color: rgb(10, 10, 10);
+padding: 15px;
+text-align: center;
+}
+.video{
+margin-top: 320px;
+padding-left: 525px;
+padding-right: 525px;
+font-size: 30px;
+justify-content: center;
+padding-top: 20px;
+color: #0e0e0e;
+background-image: url(b3.webp);
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+}
+.end{
+background-color: #2b2727;
+margin-top: 750px;
+padding-bottom: 100px;
+padding-top: 20px;
+padding-left: 40px;
+}
+.bp1{
+margin-top: 100px;
+margin-bottom: 100px;
+
+}
+.bp2{
+margin-top: 100px;
+margin-bottom: 100px;
+
+}
+label{
+color: aliceblue;
+}
+</style>
+</head>
+<body>
+    
+
+<div class="full-page">
+<div class="navbar">
+  
+<div class="logo" style="margin-left: -100px;" >
+ <a href="login.html">           
+<img src="b2.png" alt="logo" width="350px" ></a></div>
+<ul>
+<p><a href="Homepage.html" target="_blank">Home</a></p>
+<p><a href="Problem.html">Register your Problem</a></p>
+<p><a href="registeredproblems.html">Registerd problems</a></p>
+<p><a href="Aboutus.html">About us</a></p>
+<p><a href="Ourteam.html">Contact</a></p>
+</ul>
+</div>
+
+
+<div class="form-box">
+         <div class="botton-box">
+            <div id="btn"></div>
+            
+            <button type="button" class="button1" onclick="login()">log In</button>
+            <button type="button" class="button1" onclick="register()">Register</button>
+            
+         </div>
+         <form id="login"class="input-group" action="action_page.html">
+          <label for="uname"><b>User Id</b></label>
+          <input type="text" class="input-field" placeholder="user Id" required>
+          <label for="uname"><b>Password</b></label>
+          <input type="password" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="chech-box"><span>Remember Password</span>
+          <button type="submit" class="submit-btn" onclick="abc()">Log in</button>
+         </form>
+         <form id="register"class="input-group">
+            <input type="text" class="input-field" placeholder="user Id" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="chech-box"><span>I agree to the t&c</span>
+            <button type="submit" class="submit-btn">Register</button>
+           </form>
+         </div>
+      </div>
+
+
+<script>
+var x = document.getElementById("login");
+var y = document.getElementById("register");
+var z = document.getElementById("btn");
+
+function register(){
+x.style.left = "-400px";
+y.style.left = "50px";
+z.style.left = "110px";
+}
+function login(){
+x.style.left = "50px";
+y.style.left = "450px";
+z.style.left = "0px";   
+}
+function abc()
+  {
+    window.alert("you are sucessfully logged-in");
+    
+  }
+
+</script>
+
+
+
+<div class="gallery">
+<a target="_blank" href="p1.jpg">
+<img src="p1.jpg" alt="Cinque Terre" width="600" height="400">
+</a>
+<div class="desc">Sharing food in schools</div>
+</div>
+      
+<div class="gallery">
+<a target="_blank" href="p2.jpg">
+<img src="p2.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">helping people at time of Flood</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="p3.jpg">
+          <img src="p3.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Distributing food to needy people</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="p4.jpg">
+          <img src="p4.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Helping street side animals</div>
+      </div>
+
+<div class="video">
+<a href="video1.mp4" target="_blank">
+<p style="text-align: center;">Happiness is helping others</p></a>
+<video width="450px" height="280px" controls>
+<source src="video1.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="end">
+<p style="color: white;">
+  <a href="Homepage.html" style="color: white;" target="_blank"> HELPING HANDS </a>
+</p>
+<p style="color: white;">
+  <a href="Aboutus.html" style="color: white;" target="_blank">  About </a>
+</p>
+<p style="color: white;" >
+  <a href="Ourteam.html" style="color: white;" target="_blank"> Helping Hands Team </a>
+</p>
+<p style="color: white;">
+Charity
+</p>
+<p style="color: white;">
+  Be a Volunteer
+</p><hr>
+<p style="color: white;">
+  GET IN TOUCH
+</p>
+<p style="color: white;">
+  T (+91) 9509168342
+</p>
+<p style="color: white;">
+Email: keshavkhandelwal.jwr@gmail.com
+</p><hr>
+
+<a href="https://www.facebook.com/">
+<img src="facebook.png" width="55px" height="50px"></a>
+<a href="https://www.instagram.com/">
+<img src="insta.png" width="50px" height="50px"></a>
+<a href="https://twitter.com/">
+<img src="twitter.png" width="50px" height="50px"></a>
+<a href="https://www.youtube.com/">
+<img src="youtube.png" width="50px" height="50px"></a>
+
+
+
+</div>
+    
+  </body>
+  <body>
+    
+ </html>
